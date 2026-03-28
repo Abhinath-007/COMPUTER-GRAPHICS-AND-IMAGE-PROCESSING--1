@@ -12,14 +12,14 @@ def bresenham_line(x1, y1, x2, y2):
   while True:
     points.append((x1, y1))
     if x1 == x2 and y1 == y2:
-    break
+      break
     e2 = 2 * err
     if e2 > -dy:
-    err -= dy
-    x1 += sx
+      err -= dy
+      x1 += sx
     if e2 < dx:
-    err += dx
-    y1 += sy
+      err += dx
+      y1 += sy
   return points
 # -------------------------------
 # Bresenham's Circle Drawing Algorithm
